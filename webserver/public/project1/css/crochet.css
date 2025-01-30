@@ -1,0 +1,23 @@
+h6{
+    position:relative;
+    top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+}
+
+body{
+    background-color:rgb(206, 106, 106);
+}
+
+.title{
+    position:relative;
+    top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+}

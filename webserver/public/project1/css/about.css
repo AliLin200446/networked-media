@@ -1,0 +1,77 @@
+
+.container-fluid{
+    border: none;
+    overflow: hidden;
+
+}
+
+.container{
+    border:none;
+}
+.col-md-12, col-md-4,col-md-8{
+    border: none;
+}
+
+h1{
+    display:flex;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.title{
+    background-color:aliceblue;
+}
+
+.nav nav-pills{
+    display:flex !important;
+}
+
+.myImage{
+    position: relative;
+    top:5%;
+    left:20%;
+    margin:5%;
+    height:30%;
+    width:auto;
+}
+
+h6{
+    position: relative;
+    top: 8%;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    position:relative;
+    top:5%;
+    left:45%;
+    font-size: small;
+    text-decoration: none;
+}
+
+.nav{
+
+    background-color:rgb(206, 224, 241);
+    
+}
+
+.introductionPage{
+    background-color: rgb(255, 254, 240);
+}
+
+
+.spinner-container {
+   
+    display: flex;          /* Enable flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+   
+ 
+}
+
+.myfooter{
+    background-color: aliceblue;
+}
+

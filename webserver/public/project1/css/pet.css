@@ -1,0 +1,39 @@
+.container-fluid{
+    border:black solid 1px;
+}
+
+.nav{
+    justify-content: center;
+}
+.nav-item3{
+    font-size: 20px;
+    text-align: center;
+}
+.centerPic{
+    width:100%;
+    height:auto;
+}
+
+body{
+    background-color: beige;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.title{
+    font-size:40px !important;
+    color:rgb(181, 151, 113);
+}
+
+.home3text{
+    padding:10%;
+    margin-left: 3%;
+    margin-right:3%;
+}
+
+.noPadding{
+    padding:0;
+}
+.nav a{
+    color:chocolate;
+}
+

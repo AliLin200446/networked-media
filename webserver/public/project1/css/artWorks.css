@@ -1,0 +1,84 @@
+
+.container-fluid{
+    border: none;
+    overflow: hidden;
+
+}
+.container{
+    border: none;
+}
+.col-md-12, col-md-4{
+    border: none;
+}
+
+h1,
+h6{
+    display:flex;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.title{
+    background-color:aliceblue;
+}
+
+.MAW1-1{
+    height:10%;
+    width:auto;
+}
+.MAW1-2{
+    height:10%;
+    width:auto;
+}
+.MAW1-3{
+    height:20%;
+    width:auto;
+}
+.MAW2-1{
+    height:10%;
+    width:auto;
+}
+.MAW2-2{
+    height:10%;
+    width:auto;
+}
+.MAW2-3{
+    height:10%;
+    width:auto;
+}
+.MAW3-1{
+    height:15%;
+    width:auto;
+}
+.MAW3-2{
+    height:15%;
+    width:auto;
+}
+.MAW3-3{
+    height:15%;
+    width:auto;
+}
+
+.nav{
+
+    background-color:rgb(206, 224, 241);
+    
+}
+
+.container-fluid{
+    background-color: aliceblue;
+}
+
+#append_output{
+    width:90vw;
+    height:50vh;
+    background-color: aliceblue;
+    position:relative;
+    top:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.images-collage{
+    background-color:rgb(255, 251, 234) !important;
+}
