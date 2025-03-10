@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>class 13 🤍</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">🏠</a></li>
+                <li><a href="/messages">🗒️</a></li>
+                <li><a href="/main">✨</a></li>
+                <li><a href="/inputs">📩</a></li>
+                <li><a href="/inbox">📮</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="frame-main"> 
+            <div id="inspo-text">
+                <p style="margin-top: 10%;"><%= currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric' }) %> Inspo:</p>
+                <% if (randomInspo) { %>
+                    <p style="font-size: 50px; margin-bottom: 0%;margin-top: 10%;"><%= randomInspo.text %></p>
+                <% } else { %>
+                    <p>No inspiration available yet.</p>
+                <% } %>
+                <!-- <button onclick="location.reload()">🔄 Refresh Inspo</button> -->
+            </div>
+
+            <div class="frame-container">
+
+                
+
+                <div class="input-container">
+                    
+                    <form method="POST" action="/upload" enctype="multipart/form-data">
+                        <!-- <input type="text" name="textMessage" placeholder="One Word, Endless creations. Start today's Spark"> -->
+                        <textarea name="textMessage" placeholder="One Word, Endless creations. Start today's Spark"></textarea>
+                        
+
+
+
+
+
+                        <div class="controls-container">
+                            <input type="file" name="theimage" style="position: absolute;left: 0;">
+                            <!-- <input type="submit" name="sbtn" value="send"> -->
+                            <input type="submit" name="sbtn" value="Record Your Spark ✨" id="sbtn">
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+    </div>
+
+    <audio id="audio" src="/public/audio/bling-audio.mp3"></audio>
+     <!-- script -->
+     <script src="/script.js"></script>
+    </body>
+</html>

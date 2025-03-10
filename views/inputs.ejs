@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Inspo Library</title>
+        <link href="inputs.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">🏠</a></li>
+                <li><a href="/messages">🗒️</a></li>
+                <li><a href="/main">✨</a></li>
+                <li><a href="/inputs">📩</a></li>
+                <li><a href="/inbox">📮</a></li>
+                
+            </ul>
+        </nav>
+        
+            <div class="frame-main">
+                <div class="input-text">
+                    <p>Inspo Library</p>
+                </div>
+                <div class="frame-container">
+                    <div class="messages-container">
+                        <% allInspos.forEach((input) => { %> 
+                            <div class="post-item" style="text-align: center;">
+                                <p class="text">  <%= input.text %>   </p>
+                                
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+        </div>
+    
+             <!-- script -->
+    <script src="/script.js"></script>
+    </body>
+</html>
