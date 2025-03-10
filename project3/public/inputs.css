@@ -1,0 +1,123 @@
+
+
+
+/*  */
+body {
+    background-image: url("/images/star2.gif");
+    background-color: #5E2AAF;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    transition: opacity 1s ease-in; 
+    opacity: 0; 
+    overflow:hidden;
+}
+body.loaded {
+    opacity: 1; 
+}
+nav {
+    margin-left: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav li {
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px; 
+}
+
+li {
+    font-size: 50px;
+}
+
+.frame-container {
+    display: flex;
+    flex-direction: row;   /* Align the items in a row */
+    justify-content: flex-start;   /* Align items to the left, so we can scroll horizontally */
+    align-items: center;
+    background-color: #d2c8f3;
+    height: 60vh;
+    width: 80vw;
+    overflow-x: auto;  /* Enable horizontal scroll */
+    overflow-y: hidden; /* Prevent vertical scroll */
+    border-radius: 50%;
+    opacity: 70%;
+    padding: 10px; /* Add some padding inside */
+}
+
+.frame-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Prevent inner scroll */
+}
+
+.post-item {
+    display: flex;           /* Use flexbox to align content */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 222px;
+    height: 212px;
+    clip-path: polygon(
+        50% 0%,    /* Top point */
+        61% 38%,   /* Right upper point */
+        100% 38%,  /* Right upper edge */
+        68% 62%,   /* Right lower point */
+        79% 100%,  /* Bottom right point */
+        50% 75%,   /* Bottom center */
+        21% 100%,  /* Bottom left point */
+        32% 62%,   /* Left lower point */
+        0% 38%,    /* Left upper edge */
+        39% 38%    /* Left upper point */
+    );
+    background-color: #ffe4a1;
+    margin: 0 10px; /* Space between items */
+    font-family: 'Courier New', Courier, monospace;
+    flex-shrink: 0; /* Prevent shrinking of the post-item */
+}
+
+.input-text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+input {
+    text-align: center;
+
+}
+
+.messages-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

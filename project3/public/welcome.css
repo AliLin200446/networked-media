@@ -1,0 +1,79 @@
+
+
+body{
+    background-color: #d7cbff;
+    background-image: url("/images/star.gif");
+    height: 100%;
+    margin: 0;
+    display: flex;
+    /* Horizontally center */
+    justify-content: center; 
+    /* Vertically center */
+    align-items: center; 
+    /* transition */
+    transition: opacity 3s ease-out; 
+    font-family: 'Courier New', Courier, monospace;
+    overflow:scroll;
+}
+
+
+
+.slogan{
+    color: white;
+    font-size: 100px;
+ 
+
+}
+.welcomeText{
+    color:white;
+
+
+}
+
+.container{
+    align-content: center;
+    /* background-color: blue; */
+}
+
+
+.pupil {
+    width: 1110px;
+    height: 1060px;
+    background: #E6AE21;
+    opacity: 70%;
+    position: absolute;
+    clip-path: polygon(
+        50% 0%,    /* Top point */
+        61% 38%,   /* Right upper point */
+        100% 38%,  /* Right upper edge */
+        68% 62%,   /* Right lower point */
+        79% 100%,  /* Bottom right point */
+        50% 75%,   /* Bottom center */
+        21% 100%,  /* Bottom left point */
+        32% 62%,   /* Left lower point */
+        0% 38%,    /* Left upper edge */
+        39% 38%    /* Left upper point */
+    );
+    left: 40%;
+    top: 20%;
+    /* transform: translate(-50%, -50%); */
+    /* position:relative; */
+    /* z-index: index 3;; */
+}
+
+
+
+
+/* Highlight text when pupil is near */
+.highlight {
+    transition: color 0.3s ease;
+}
+
+/* Optional: Add transition effect when color changes */
+.highlight.hover {
+    color: #ffeb94; /* Color when the pupil hovers over it */
+}
+
+.hidden {
+    opacity: 0;
+}

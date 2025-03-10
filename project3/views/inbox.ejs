@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>welcome to inbox</title>
+        <link href="inbox.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">🏠</a></li>
+                <li><a href="/messages">🗒️</a></li>
+                <li><a href="/main">✨</a></li>
+                <li><a href="/inputs">📩</a></li>
+                <li><a href="/inbox">📮</a></li>
+            </ul>
+        </nav>
+
+        <div class="frame-main">
+            <div class="frame-container">
+                <div class="input-container">
+                    
+                    <form method="POST" action="/upload2" enctype="multipart/form-data">
+                        <input type="text" name="textInput" placeholder="Thank You For Your Contribution">
+                        
+                        <div class="controls-container">
+                            <!-- <input type="file" name="theimage" style="position: absolute;left: 0;"> -->
+                            <input type="submit" name="sbtn" value="Send">
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+                     <!-- script -->
+    <script src="/script.js"></script>
+    </body>
+</html>
