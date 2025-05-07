@@ -1,0 +1,102 @@
+body {
+    background-color: #a6ac4c;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    transition: opacity 3s ease-out; 
+    font-family: 'Courier New', Courier, monospace;
+    /* background image sizing ref: https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat &chatgpt ref:https://chatgpt.com/c/681a1e16-bf4c-800e-aed3-db0756d4850b */
+    background-image: url("/images/test-background3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+
+.logo{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    margin: none;
+}
+
+#logoSketch {
+    width: 100px; 
+    height: 100px; 
+    display: block;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.welcome-text {
+    color:#FFDF6B;
+    font-weight: bold;
+    text-align: center;
+    margin: none;
+    font-size: 100px;
+    padding:none;
+}
+.description-text{
+    color:white;
+    margin: none;
+    font-size: 20px;
+}
+
+.flower-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mysketch {
+
+    display: block;
+    margin: 0 auto;
+}
+
+.about, .get-started {
+    color: white;
+    text-align: center;
+}
+
+.about h1, .get-started h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.about a, .get-started a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about a:hover, .get-started a:hover {
+    color: #93D6CF;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.footer {
+    position:absolute;
+    bottom:1%;
+    margin-top: 50px;
+    border-top: 1px solid white;
+    color: white;
+    text-align: center;
+    width:80%
+}
+
+

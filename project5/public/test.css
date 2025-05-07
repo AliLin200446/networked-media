@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #a6ac4c;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.sparks-container {
+    background-color: #8F644E;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    opacity: 70%;
+    border-radius: 30%;
+    perspective: 1000px;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+.messages-container {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 50px;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style */
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
+}
+
+.post-item {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 50%;
+    background-color: white !important;
+    width: 200px;
+    height: 500px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center bottom;
+}
+
+.post-item:hover {
+    transform: scale(1.1) translateY(-10px);
+    z-index: 10;
+}

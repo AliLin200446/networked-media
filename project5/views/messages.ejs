@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Garden</title>
+    <link href="messages.css" rel="stylesheet">
+</head>
+<body>
+        <nav>
+            <div class="logo" id="logo" onclick="window.location.href='/'">
+                <div id="logoSketch"></div>
+            </div>
+            <ul>
+                <!-- <li><a href="/">home</a></li> -->
+                <li><a href="/news">Seeds library</a></li>
+                <li><a href="/messages" style="color:#FFDF6B">Garden</a></li>
+                <li><a href="/main">grow a seed here</a></li>
+            </ul>
+        </nav>
+
+        <div class="garden-container">
+
+            <div class="title">
+                <p>Garden</p>
+            </div>
+            <div class="posts-carousel" id="carousel">
+                <% allPosts.forEach((post, index) => { %>
+                    <div class="post-item">
+                        <div class="flower-container" id="flower-<%= index %>"></div>
+                        <p class="post-text"><%= post.text %></p>
+                        <% if(post.imgUrl) { %>
+                            <img src="<%= post.imgUrl %>" class="post-image">
+                        <% } %>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+        <script src="logo.js"></script>
+        <script src="messages.js"></script>
+</body>
+</html>
